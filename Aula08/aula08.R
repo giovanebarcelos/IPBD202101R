@@ -146,6 +146,9 @@ ggplot( sparrows, aes(Tarsus)) +
 ggplot( sparrows, aes( x = Wing, y = Tarsus)) +
   geom_point(position = position_jitter(width = .5, height = 0))
 
+ggplot( sparrows, aes( x = Wing, y = Tarsus)) +
+  geom_point(position = position_jitter(width = .5, height = 0))
+
 ggplot(sparrows, aes(Sex, Wing, fill = Sex) ) +
   geom_boxplot()
 
